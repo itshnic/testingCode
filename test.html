@@ -5,40 +5,108 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>Document</title>
 </head>
 
 <body>
 	<header class="header">
-		<nav class="menu">
-			<ul class="list">
-				<li class="list__item"><span>logo</span></li>
-				<li class="list__item"><span>Basket</span> <span class="count">0</span></li>
+		<nav class="header__menu">
+			<ul class="header__list">
+				<li class="header__list_item"><span>logo</span></li>
+				<li class="header__list_item basket__logo">
+					<span>Basket</span>
+					<span class="basket__logo_body">
+						<span class="basket__logo_count">0</span>
+					</span>
+					<div class="basket__body">
+						<table class='basket__body-table'>
+							<thead class="basket__body-header">
+								<tr>
+									<th>Image</th>
+									<th>info</th>
+									<th>price</th>
+								</tr>
+							</thead>
+							<tbody class="basket__body-content">
+								<td><img src="#" alt="foto"></td>
+								<td>cart-1</td>
+								<td class='_rub'>1000</td>
+							</tbody>
+							<tfoot class="basket__body-footer">
+								<td colspan='2' class="basket__body-content_summ">Итого:</td>
+								<td id='summ' class="basket__body-content_summ _rub">1000</td>
+							</tfoot>
+						</table>
+					</div>
+				</li>
 			</ul>
-			<div class="basket__body">
-
-			</div>
 		</nav>
 	</header>
 	<main class="main-page">
-
-		<ul class="catalog__list">
-			<li class="catalog__item">cart-1</li>
-			<li class="catalog__item">cart-2</li>
-			<li class="catalog__item">cart-3</li>
-			<li class="catalog__item">cart-4</li>
-			<li class="catalog__item">cart-5</li>
-			<li class="catalog__item">cart-6</li>
-			<li class="catalog__item">cart-7</li>
-			<li class="catalog__item">cart-8</li>
-			<li class="catalog__item">cart-4</li>
-			<li class="catalog__item">cart-5</li>
-			<li class="catalog__item">cart-6</li>
+		<ul class="main-page__catalog">
+			<li class="main-page__catalog-item">
+				<img src="img/foto1.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info'>cart-1</span>
+					<span class='main-page__catalog-content_price _rub'>1000</span>
+				</div>
+			</li>
+			<li class="main-page__catalog-item">
+				<img src="img/foto2.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info'>cart-2</span>
+					<span class='main-page__catalog-content_price _rub'>7000</span>
+				</div>
+			</li>
+			<li class="main-page__catalog-item">
+				<img src="img/foto3.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info'>cart-3</span>
+					<span class='main-page__catalog-content_price _rub'>5600</span>
+				</div>
+			</li>
+			<li class="main-page__catalog-item">
+				<img src="img/foto4.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info'>cart-4</span>
+					<span class='main-page__catalog-content_price _rub'>3450</span>
+				</div>
+			</li>
+			<li class="main-page__catalog-item">
+				<img src="img/foto5.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info'>cart-5</span>
+					<span class='main-page__catalog-content_price _rub'>3700</span>
+				</div>
+			</li>
+			<li class="main-page__catalog-item">
+				<img src="img/foto6.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info '>cart-6</span>
+					<span class='main-page__catalog-content_price _rub'>2650</span>
+				</div>
+			</li>
+			<li class="main-page__catalog-item">
+				<img src="img/foto7.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info'>cart-7</span>
+					<span class='main-page__catalog-content_price _rub'>1650</span>
+				</div>
+			</li>
+			<li class="main-page__catalog-item">
+				<img src="img/foto7.jpg" alt="foto">
+				<div class="main-page__catalog-content ">
+					<span class='main-page__catalog-content_info'>cart-8</span>
+					<span class='main-page__catalog-content_price _rub'>1500</span>
+				</div>
+			</li>
 		</ul>
 	</main>
 	<footer class="footer">
-		<div class="copyright">&copy;2023 Создано студентом GeekBR</div>
+		<div class="footer__copyright">&copy;2023 Создано студентом GeekBR</div>
 	</footer>
+	<script src="script.js"></script>
 </body>
 
 </html>
