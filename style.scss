@@ -123,12 +123,68 @@ body {
 	&__dinamic {
 	}
 }
-// animation: duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name;
+// animation: name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state ;
+
+// transition-duration: – задает длительность анимации от начала и до конца;
+// transition-timing-function: – задает способ передвижения анимации вдоль временного «трека», например, ease, ease-in, linear и т.д;
+// transition-delay: – время задержки (если оно есть) старта анимации
+// iteration-count: – сколько раз играть анимацию, для зацикливания можно использовать значение infinite
+// animation-fill-mode: задает, будут ли видны стили до или после проигрывания анимации.backwards – применяются стили первого кейфрейма (0%) forwards – стили последнего кейфрейма (100%) both – правила работают как для backwards так и для forwards.
+// play-state:Состояние проигрывание можно задать в paused и running
 ._keyframes {
-	animation: dynamic-kart;
+	animation-name: dynamic-kart;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
 }
 @keyframes dynamic-kart {
+	0% {
+		position: absolute;
+	}
+	20% {
+		transform: rotate(80deg) scale(0.9);
+		top: 45px;
+		left: 200px;
+		position: absolute;
+		opacity: 0.8;
+	}
+	40% {
+		transform: rotate(120deg) scale(0.7);
+		top: 35px;
+		left: 400px;
+		position: absolute;
+		opacity: 0.6;
+	}
+	60% {
+		transform: rotate(200deg) scale(0.5);
+		top: 25px;
+		left: 600px;
+		position: absolute;
+		opacity: 0.45;
+	}
+	80% {
+		transform: rotate(280deg) scale(0.3);
+		top: 20px;
+		left: 800px;
+		position: absolute;
+		opacity: 0.4;
+	}
+	90% {
+		transform: rotate(300deg) scale(0.2);
+		top: 18px;
+		left: 900px;
+		position: absolute;
+		opacity: 0.2;
+	}
+	100% {
+		transform: rotate(360deg) scale(0.1);
+		top: 15px;
+		left: 975px;
+		position: absolute;
+		opacity: 0.1;
+	}
 }
+
 ._rub:after {
 	content: "p.";
 }

@@ -105,10 +105,59 @@ body {
   color: orange;
 }
 ._keyframes {
-  animation: dynamic-kart;
+  animation-name: dynamic-kart;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
-@keyframes dynamic-kart {}
+@keyframes dynamic-kart {
+  0% {
+    position: absolute;
+  }
+  20% {
+    transform: rotate(80deg) scale(0.9);
+    top: 45px;
+    left: 200px;
+    position: absolute;
+    opacity: 0.8;
+  }
+  40% {
+    transform: rotate(120deg) scale(0.7);
+    top: 35px;
+    left: 400px;
+    position: absolute;
+    opacity: 0.6;
+  }
+  60% {
+    transform: rotate(200deg) scale(0.5);
+    top: 25px;
+    left: 600px;
+    position: absolute;
+    opacity: 0.45;
+  }
+  80% {
+    transform: rotate(280deg) scale(0.3);
+    top: 20px;
+    left: 800px;
+    position: absolute;
+    opacity: 0.4;
+  }
+  90% {
+    transform: rotate(300deg) scale(0.2);
+    top: 18px;
+    left: 900px;
+    position: absolute;
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.1);
+    top: 15px;
+    left: 975px;
+    position: absolute;
+    opacity: 0.1;
+  }
+}
 ._rub:after {
   content: "p.";
 }
