@@ -16,7 +16,7 @@
 
 `git commit -m` 'описание комита'
 
-`git commit -a -m` 'описание комита' - Добавит инфу и commit!
+`git commit -a -m` or `git commit -am` 'описание комита' - Добавит инфу и commit!
 
 ```JS
 let a = 'git';
