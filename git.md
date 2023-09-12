@@ -8,15 +8,26 @@
 
 Загружаем с [сайта](https://git-scm.com/)
 
+## 3. Настройка git
+
+Настройка config -
+
+```Bash
+git cdgit config --global user.name "пишем имя"
+git config --global user.email "пишем email"
+git config --global color.ui "auto" создаем подсветку элементов консоли
+git config --list просмотр информации
+
+```
+
+```Bash
 `git --version` показывает версию GIT
-
 `git status` Проверяет статус git а
-
 `git add` добавляет инфу в репозиторий
-
 `git commit -m` 'описание комита'
-
 `git commit -a -m` or `git commit -am` 'описание комита' - Добавит инфу и commit!
+
+```
 
 ```JS
 let a = 'git';
